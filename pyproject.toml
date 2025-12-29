@@ -1,0 +1,31 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Autonomous Decision Support Agent - Helps users make complex decisions through structured research and analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0.0",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.0",
+    "trafilatura>=1.12.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.7.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.29.0"]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.23.0"]
+
+[project.scripts]
+research-agent = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
