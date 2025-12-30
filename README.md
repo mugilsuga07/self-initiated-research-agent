@@ -102,6 +102,4 @@ src/
 - **Trafilatura** - Web content extraction
 - **Rich** - Terminal formatting
 
-## License
 
-MIT License - see LICENSE file for details.
