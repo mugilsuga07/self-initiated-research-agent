@@ -64,7 +64,7 @@ python -m src.main
 Or with a question:
 
 ```bash
-python -m src.main "Are AI agents ready for production use?"
+python -m src.main "Understand the latest research on self-driving cars"
 ```
 
 ## Project Structure
